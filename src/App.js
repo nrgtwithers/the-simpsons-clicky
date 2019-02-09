@@ -10,9 +10,10 @@ class App extends Component {
           <div className="nav-wrapper">
             <a href="www.google.com" className="brand-logo">The Simpsons</a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
+              {/* <li><h6>Click an image to begin game!</h6></li> */}
+              <li>Score: 0 </li>
+              <li> | </li>
+              <li>Top Score: 0</li>
             </ul>
           </div>
         </nav>

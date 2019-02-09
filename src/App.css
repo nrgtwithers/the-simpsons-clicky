@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 .App {
-  text-align: center;
+  text-align: left;
+}
+
+.nav-wrapper{
+  background-color: #ffd90f;
+}
+
+a,a.brand-logo{
+  color: #70D1FE !important;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000
+
 }
 
 .App-logo {

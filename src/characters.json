@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Homer Simpson",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
+    },
+    {
+      "id": 2,
+      "name": "Bart Simpson",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png"
+    },
+    {
+      "id": 3,
+      "name": "Apu Nahasapeemapetilon",
+      "image": "https://vignette.wikia.nocookie.net/simpsons/images/7/7d/Apu_Nahasapeemapetilon.png/revision/latest?cb=20171027210822"
+    },
+    {
+      "id": 4,
+      "name": "Marge Simpson",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png"
+    },
+    {
+      "id": 5,
+      "name": "Lisa Simpson",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png"
+    },
+    {
+      "id": 6,
+      "name": "Maggie Simpson",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png"
+    },
+    {
+      "id": 7,
+      "name": "Milhouse Van Houten",
+      "image": "https://vignette.wikia.nocookie.net/simpsons/images/9/91/Milhouse_Van_Houten_2.png/revision/latest?cb=20180429212659"
+    },
+    {
+      "id": 8,
+      "name": "Mr. Burns",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png"
+    },
+    {
+      "id": 9,
+      "name": "Ned Flanders",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Ned_Flanders.png"
+    },
+    {
+      "id": 10,
+      "name": "Krusty the Clown",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/5a/Krustytheclown.png"
+    },
+    {
+      "id": 11,
+      "name": "Moe Szyslak",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Moe_Szyslak.png"
+    },
+    {
+      "id": 12,
+      "name": "Santa's Little Helper",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/SantasLittleHelper.png"
+    }
+  ]
+  

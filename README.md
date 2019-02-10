@@ -6,12 +6,13 @@ This game is based on the awesome cartoon show called The Simpsons. The rules ar
 
 ### Live Demo
 
-This app is deployed on heroku [here]().
+This app is deployed on heroku [here](https://rocky-eyrie-54283.herokuapp.com/).
 
 ### Tasks
 1. PSEUDOCODE the app to have game fully functioning
 1. Test / Debug
-1. Deploy to Heroku
+1. Change background to image chosen.
+1. ~~Deploy to Heroku~~
 
 #### Technologies
 - ReactJS

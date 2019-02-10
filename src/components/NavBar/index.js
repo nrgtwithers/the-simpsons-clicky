@@ -1,4 +1,5 @@
 import React from "react";
+// import SimpsonsCard from "./components/SimpsonsCard"
 import "./style.css";
 
 

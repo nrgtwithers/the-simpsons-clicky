@@ -5,34 +5,58 @@ import NavBar from "./components/NavBar";
 import characters from "./characters.json";
 import './App.css';
 
+
 class App extends React.Component {
   state = {
     characters,
     score: 0,
+    topScore: 0,
     clickSimpson: []
   };
-  // On click event
-  imageClicked = event => {
-    const character = event.target.alt;
-    const characterClickedTwice =
-      this.state.clickSimpson.indexOf(character) > -1
-
-    // Condition if already clicked
-    if (characterClickedTwice) {
+  // On click id
+  imageClicked = id => {
+    console.log(id)
+    let clickSimpson = this.state.clickSimpson;
+    if(clickSimpson.indexOf(id)=== -1){
+      console.log('notInArr') 
+      console.log(this.state.clickSimpson)
+      clickSimpson.push(id);
       this.setState({
-        characters: this.state.characters.sort(function (a, b) {
-          return 0.5 - Math.random();
-        }),
+        clickSimpson,
+        score: this.state.score + 1,
+        topScore: this.state.topScore + 1
+      })
+    } else {
+      
+        let currentScore = this.state.score
+      if(currentScore > this.state.topScore){
+        this.setState({
+          topScore: currentScore
+        })
+      }
+      let shuffledCharacters = this.shuffleArray(this.state.characters)
+      this.setState({
         clickSimpson: [],
-        score: 0
+        score: 0,
+        characters: shuffledCharacters
       })
     }
+  };
+  shuffleArray = array => {
+    let i = array.length - 1;
+    for (; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
   }
-// 
+   
 render() {
   return (
     <div>
-      <NavBar />
+      <NavBar score={this.state.score} topScore={this.state.topScore} />
       <div className="jumbotron">
         <h1 className="title">Click an image to begin!</h1>
         <h6>Click on an image to earn points, but don't click on any more than once!</h6>
@@ -40,7 +64,7 @@ render() {
       </div>
       <Wrapper>
         {this.state.characters.map((data) =>
-          <SimpsonsCard name={data.name} image={data.image} key={data.id} id={data.id} />
+          <SimpsonsCard name={data.name} image={data.image} key={data.id} id={data.id} imageClicked={this.imageClicked} />
         )}
       </Wrapper>
     </div>
@@ -48,25 +72,5 @@ render() {
 }
 }
 
-// class App extends React.Component {
-//   state = {
-//     friends
-//   }
-//   removeFriend = id => {
-//     const currentFriends = this.state.friends.filter(friend => friend.id !== id);
-
-//     this.setState({ friends: currentFriends });
-//   }
-//   render() {
-
-//     return (<Wrapper>
-//       <h1 className="title">Friends List</h1>
-//       {this.state.characters.map((data) =>
-//         <SimpsonsCard image={data.image}
-//         />
-//       )}
-//     </Wrapper>)
-//   }
-// };
 
 export default App;

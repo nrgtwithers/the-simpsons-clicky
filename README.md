@@ -12,7 +12,7 @@ This app is deployed on heroku [here](https://rocky-eyrie-54283.herokuapp.com/).
 1. PSEUDOCODE the app to have game fully functioning
 1. Test / Debug
 1. Change background to image chosen.
-1. ~~Deploy to Heroku~~
+
 
 #### Technologies
 - ReactJS

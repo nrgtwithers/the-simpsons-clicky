@@ -2,47 +2,56 @@
     {
       "id": 1,
       "name": "Homer Simpson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png",
+      "clicked": false
     },
     {
       "id": 2,
       "name": "Bart Simpson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png",
+      "clicked": false
     },
     {
       "id": 3,
       "name": "Apu Nahasapeemapetilon",
-      "image": "https://vignette.wikia.nocookie.net/simpsons/images/7/7d/Apu_Nahasapeemapetilon.png/revision/latest?cb=20171027210822"
+      "image": "https://vignette.wikia.nocookie.net/simpsons/images/7/7d/Apu_Nahasapeemapetilon.png/revision/latest?cb=20171027210822",
+      "clicked": false
     },
     {
       "id": 4,
       "name": "Marge Simpson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Marge_Simpson.png",
+      "clicked": false
     },
     {
       "id": 5,
       "name": "Lisa Simpson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png",
+      "clicked": false
     },
     {
       "id": 6,
       "name": "Maggie Simpson",
-      "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png",
+      "clicked": false
     },
     {
       "id": 7,
       "name": "Milhouse Van Houten",
-      "image": "https://vignette.wikia.nocookie.net/simpsons/images/9/91/Milhouse_Van_Houten_2.png/revision/latest?cb=20180429212659"
+      "image": "https://vignette.wikia.nocookie.net/simpsons/images/9/91/Milhouse_Van_Houten_2.png/revision/latest?cb=20180429212659",
+      "clicked": false
     },
     {
       "id": 8,
       "name": "Mr. Burns",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/56/Mr_Burns.png",
+      "clicked": false
     },
     {
       "id": 9,
       "name": "Ned Flanders",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Ned_Flanders.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Ned_Flanders.png",
+      "clicked": false
     },
     {
       "id": 10,
@@ -52,12 +61,14 @@
     {
       "id": 11,
       "name": "Moe Szyslak",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Moe_Szyslak.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Moe_Szyslak.png",
+      "clicked": false
     },
     {
       "id": 12,
       "name": "Santa's Little Helper",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/SantasLittleHelper.png"
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/8a/SantasLittleHelper.png",
+      "clicked": false
     }
   ]
   

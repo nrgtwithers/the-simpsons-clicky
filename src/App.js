@@ -27,7 +27,7 @@ class App extends React.Component {
         topScore: this.state.topScore + 1
       })
     } else {
-      
+      alert(`Sorry, you lose! Click ok to start again.`)
         let currentScore = this.state.score
       if(currentScore > this.state.topScore){
         this.setState({

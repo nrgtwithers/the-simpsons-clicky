@@ -16,20 +16,34 @@ class App extends React.Component {
   // On click id
   imageClicked = id => {
     console.log(id)
+    let currentScore = this.state.score;
     let clickSimpson = this.state.clickSimpson;
-    if(clickSimpson.indexOf(id)=== -1){
-      console.log('notInArr') 
+    if (clickSimpson.indexOf(id) === -1) {
+      console.log('notInArr')
       console.log(this.state.clickSimpson)
       clickSimpson.push(id);
       this.setState({
         clickSimpson,
-        score: this.state.score + 1,
-        topScore: this.state.topScore + 1
+        score: this.state.score + 1
       })
+      if (currentScore === 12) {
+        if (currentScore >= this.state.topScore) {
+          this.setState({
+            topScore: currentScore
+          })
+          alert(`You won! Click ok to start again.`)
+        }
+        let shuffledCharacters = this.shuffleArray(this.state.characters)
+        this.setState({
+          clickSimpson: [],
+          score: 0,
+          characters: shuffledCharacters
+        })
+      }
+
     } else {
       alert(`Sorry, you lose! Click ok to start again.`)
-        let currentScore = this.state.score
-      if(currentScore > this.state.topScore){
+      if (currentScore >= this.state.topScore) {
         this.setState({
           topScore: currentScore
         })
@@ -52,25 +66,26 @@ class App extends React.Component {
     }
     return array;
   }
-   
-render() {
-  return (
-    <div>
-      <NavBar score={this.state.score} topScore={this.state.topScore} />
-      <div className="jumbotron">
-        <h1 className="title">Click an image to begin!</h1>
-        <h6>Click on an image to earn points, but don't click on any more than once!</h6>
-        <p>If you do click on an image more than once, game will start over and shuffle the images.</p>
+
+  render() {
+    return (
+      <div>
+        <NavBar score={this.state.score} topScore={this.state.topScore} />
+        <div className="jumbotron">
+          <h1 className="title">Click an image to begin!</h1>
+          <h6>Click on an image to earn points, but don't click on any more than once!</h6>
+          <p>If you do click on an image more than once, game will start over and shuffle the images.</p>
+        </div>
+        <Wrapper>
+          {this.state.characters.map((data) =>
+            <SimpsonsCard name={data.name} image={data.image} key={data.id} id={data.id} imageClicked={this.imageClicked} />
+          )}
+        </Wrapper>
       </div>
-      <Wrapper>
-        {this.state.characters.map((data) =>
-          <SimpsonsCard name={data.name} image={data.image} key={data.id} id={data.id} imageClicked={this.imageClicked} />
-        )}
-      </Wrapper>
-    </div>
-  );
+    );
+  }
 }
-}
+
 
 
 export default App;
